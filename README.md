@@ -4,20 +4,19 @@ A dockerfile and bash script for executing [vcsim](https://github.com/vmware/gov
 
 ## Build
 
-```
+```powershell
 docker build -t vcsim
 ```
 
-
 ## Pull
 
-```
+```powershell
 docker pull jsonofcourse/vcsim
 ```
 
 ## Run
 
-```
+```powershell
 docker run -d -p 8989:8989 jsonofcourse/vcsim
 ```
 
@@ -25,7 +24,7 @@ docker run -d -p 8989:8989 jsonofcourse/vcsim
 
 #### Service Configuration
 
-```
+```powershell
 -autostart             Autostart model created VMs (default true)
 -delay (int)           Method response delay across all methods
 -delay-jitter (float)  Delay jitter coefficient of variation (tip: 0.5 is a good starting value)
@@ -43,7 +42,7 @@ docker run -d -p 8989:8989 jsonofcourse/vcsim
 
 #### Pre-defined resources
 
-```
+```powershell
 -app (int)             Number of virtual apps per compute resource
 -cluster (int)         Number of clusters (default 1)
 -dc (int)              Number of datacenters (default 1)
